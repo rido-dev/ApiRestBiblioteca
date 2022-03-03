@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Lista de libros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:beige;">
+        <b><h1><div align="center" >LISTA DE LIBROS (ID, AUTOR Y TITULO)</div></b></h1>
+        <p></p>
+    <div th:each="libros : ${categoria}">
+        <h2><div th:text="${libros.categoria}"></div></h2>
+        <h3>
+            <div th:text="${libros.titulo}"></div>
+            <div th:text="${libros.autor}"></div>
+        </h3> 
+        <p></p>
+    </div>
+    <p></p>
+    </body>
+</html>
